@@ -12,7 +12,7 @@ public class PracticeProblems {
     public static int[] reverseArray(int[] arr1) {
         int[] arr2 = new int[5];
         for(int a=4; a >= 0; a--) {
-            for(int e=0; e < arr2.length; a++) {
+            for(int e=0; e < arr2.length; e++) {
                 arr1[a] = arr2[e];
             }
         }
@@ -28,7 +28,6 @@ public class PracticeProblems {
         }
     return sum;
     }
-    int[] fib = {0,1,1,2,3,5,8,13};
     public static int fib(int n) {
         if (n<=1) {
             return 0;
