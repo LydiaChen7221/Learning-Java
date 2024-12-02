@@ -6,7 +6,7 @@ public class Main {
 	public static void main(String[] args) {
        System.out.println("Hello World");
 	   int x = 6;
-	   System.out.println(x +4);
+	   System.out.println(x + 4);
 	   System.out.println(x);
 	   System.out.println(x % 2 == 0);
 	   System.out.println("y:" + y);
@@ -29,6 +29,8 @@ public class Main {
 		for (int i = 0; i < 9; i++) {
 			s += "- - - - - - - - -\n";
 		}
+
+		//Practice Problems
 		System.out.println(s);
 		int[] arr = {3,7,3,8,1,2,9,5};
 		System.out.println(PracticeProblems.countOccurrences(arr, 3));

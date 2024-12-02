@@ -1,4 +1,6 @@
 public class PracticeProblems {
+
+    //Practice Problem 1 - Counting Occurences:
     public static int countOccurrences(int[] arr, int n) {
         int count = 0;
         for(int i=0; i < arr.length; i++) {
@@ -8,16 +10,21 @@ public class PracticeProblems {
         }
         return count;
     }
+
+    //Practice Problem 2 - Reversing an Array:
     static int[] arr1 = {1,2,3,4,5};
-    public static int[] reverseArray(int[] arr1) {
-        int[] arr2 = new int[5];
+    public static String reverseArray(int[] arr1) {
+        String reverse = "{";
         for(int a=4; a >= 0; a--) {
-            for(int e=0; e < arr2.length; e++) {
-                arr1[a] = arr2[e];
+            reverse+=arr1[a];
+            if(a != arr1.length-5){
+                reverse += ", ";
             }
         }
-        return arr2;
+        return reverse + "}";
     }
+
+    //Practice Problem 3 - Sum of a Grid:
     static double [][] grid = new double[3][3];
     public static double sumGrid(double[][] grid) {
         double sum = 0;
@@ -28,6 +35,8 @@ public class PracticeProblems {
         }
     return sum;
     }
+
+    //Practice Problem 4 - nth number in Fibonacci Sequence:
     public static int fib(int n) {
         if (n<=1) {
             return 0;
