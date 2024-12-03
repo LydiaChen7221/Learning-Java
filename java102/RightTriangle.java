@@ -35,7 +35,7 @@ public class RightTriangle implements Shape{
 		double yDist = p.y - corner.y;
 		return ((0 < xDist && xDist < adjacent) &&
 				(0 < yDist && yDist < opposite)) && 
-				(yDist * adjacent < xDist * opposite);
+				(yDist * adjacent > xDist * opposite);
 	}
 
 	/** 
